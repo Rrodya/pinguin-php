@@ -1,5 +1,6 @@
 <?php include "assets/header.html";?>
 <div class="container">
+    <div class="content">
     <h2>Добавление поста</h2>
     <form method="post" enctype="multipart/form-data">
         <div class="input-group">
@@ -14,10 +15,11 @@
             <label for="img_post">Выберите изображениек поста</label>
             <input type="file" id="img_post" name="img_post">
         </div>
-        <div class="input-group">
+        <div class="input-group input-btn">
             <button class="btn" type="submit">Добавить</button>
         </div>
     </form>
+    </div>
 </div>
 <?php
 $conn = mysqli_connect("localhost", "root", "", "collage-php","3306");

@@ -15,8 +15,7 @@ header {
 
 .nav-list{
     display: flex;
-    width: 50%;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .nav-list>li{
@@ -54,7 +53,7 @@ header {
     margin-right: auto;
 }
 
-.input-group{
+/* .input-group{
     display: flex;
     flex-direction: column;
 }
@@ -63,7 +62,7 @@ header {
     width: 10%;
     margin-left: auto;
     margin-right: auto;
-}
+} */
 
 .pagination{
     display: flex;

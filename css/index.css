@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+.container{
+    background-color: #F2F2F2;
+    width: 90%;
+    margin: 0 auto;
+}
+
+header{
+    padding: 20px 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+}
+
+header .logo{
+    display: flex;
+    align-items: center;
+}
+
+.nav-list li{
+    margin-left: 50px;
+    justify-content: space-between;
+    color: #37373A;
+}
+
+.catalog{
+    padding: 100px 0;
+}
+
+.catalog .card{
+    border: none;
+    border-radius: 0;
+    background-color: #37373A;
+    padding: 18px 30px;
+    text-align: left;
+}
+
+.catalog .card .card-title{
+    font-size: 23px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.pagination{
+    margin: 50px auto;
+}
+
+.pagination li{
+    border: none;
+    background-color: #FF5656;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+.pagination li a{
+    color: white;
+}

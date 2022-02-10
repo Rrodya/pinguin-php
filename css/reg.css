@@ -1,0 +1,9 @@
+.ref h1{
+    font-weight: bold;
+    color: #FF5656;
+}
+
+form{
+    width: 600px;
+    margin: 0 auto;
+}

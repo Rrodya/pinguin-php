@@ -1,7 +1,7 @@
 <?php include "assets/header.html";
 $count_post_on_page = 4;
 ?>
-<div class="catalog">
+<div class="catalog container">
     <?php
     $conn = mysqli_connect("localhost", "root", "", "collage-php","3306");
 

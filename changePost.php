@@ -9,38 +9,43 @@ $post_info = mysqli_fetch_array(mysqli_query($conn, "SELECT * FROM posts WHERE `
 
 ?>
 
-<div class="container changeContent">
-    <nav class="post-list">
-        <?php
-        while ($post = mysqli_fetch_array($posts_list)) {
-            echo "<li class='card-item'>", "<a class='card-title' href='?post=" . $post["idPost"] . "'>" . $post["title"] . "</a>",
-            "</li>";
-        }
-        ?>
-    </nav>
-    <div class="post-info">
-        <h2>Редактирование поста</h2>
-        <form method="post" enctype="multipart/form-data">
-            <div class="input-group">
-                <label for="title_post">Введите заголовок поста</label>
-                <input type="text" name="title_post" id="title_post" value="<?php echo $post_info['title'] ?>">
-            </div>
-            <div class="input-group">
-                <label for="text_post">Введите текст поста</label>
-                <textarea name="text_post" id="text_post" cols="30" rows="10"><?php echo $post_info['text'] ?></textarea>
-            </div>
-            <div class="input-group">
-                <label for="img_post">Выберите изображениек поста</label>
-                <input type="file" id="img_post" name="img_post">
-            </div>
-            <div class="input-group">
-                <button name="update" class="update" value="update" type="submit">Редактировать</button>
-            </div>
-            <div class="input-group">
-                <button name="delete" class="delete" value="delete" type="submit">Удалить</button>
-            </div>
-        </form>
+<div class="container ">
+    <div class="changeContent">
+        <nav class="post-list">
+            <?php
+            while ($post = mysqli_fetch_array($posts_list)) {
+                echo "<li class='card-item'>", "<a class='card-title' href='?post=" . $post["idPost"] . "'>" . $post["title"] . "</a>",
+                "</li>";
+            }
+            ?>
+        </nav>
+        <div class="post-info">
+            <h2>Редактирование поста</h2>
+            <form method="post" enctype="multipart/form-data">
+                <div class="input-group">
+                    <label for="title_post">Введите заголовок поста</label>
+                    <input type="text" name="title_post" id="title_post" value="<?php echo $post_info['title'] ?>">
+                </div>
+                <div class="input-group">
+                    <label for="text_post">Введите текст поста</label>
+                    <textarea name="text_post" id="text_post" cols="30" rows="10"><?php echo $post_info['text'] ?></textarea>
+                </div>
+                <div class="input-group">
+                    <label for="img_post">Выберите изображениек поста</label>
+                    <input type="file" id="img_post" name="img_post">
+                </div>
+                <div class="group-btns">
+                    <div class="input-group input-btn">
+                        <button name="update" class="update btn" value="update" type="submit">Редактировать</button>
+                    </div>
+                    <div class="input-group input-btn">
+                        <button name="delete" class="delete btn" value="delete" type="submit">Удалить</button>
+                    </div>
+                </div>
+            </form>
+        </div>
     </div>
+    
 </div>
 
 <?php
