@@ -7,15 +7,15 @@
       
 
 
-         <label for ='login'>мейл </label><br>
+         <label for ='login'>Email </label><br>
 
         <input type="text" name="login" id="login"><br>
-         <label for ='password'>Пароль </label><br>
+         <label for ='password'>Password </label><br>
 
         <input type="password" name="password" id="password"><br>
-         <label for ='button'>кнопка </label><br>
-
-        <input type="submit" name="button"><br>
+        <div class="input-btn input-group">
+                <button type="submit" class="btn" name="button">Login</button>
+                </div><br>
 
 </div></div>
 </form>
